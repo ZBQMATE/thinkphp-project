@@ -1,0 +1,115 @@
+<include file="./Public/structure/header.html" />
+<!--banner start-->
+<div class="slider">
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider">
+    <li>
+        <div class="banner1"><a href="__APP__/Home/Detail/info/no/{$elisez.cph}">
+            <div class="banner-info">
+                <h3>{$elisez.cpm}</h3>
+                <p>{$elisez.xcya}</p>
+            </div></a>
+        </div>
+    </li>
+    <li>
+        <div class="banner2"><a href="__APP__/Home/Detail/info/no/{$elisey.cph}">
+            <div class="banner-info">
+                <h3>{$elisey.cpm}</h3>
+                <p>{$elisey.xcya}</p>
+            </div></a>
+        </div>
+    </li>
+    <li>
+        <div class="banner3"><a href="__APP__/Home/Detail/info/no/{$elisex.cph}">
+            <div class="banner-info">
+                <h3>{$elisex.cpm}</h3>
+                <p>{$elisex.xcya}</p>
+            </div></a>
+        </div>
+    </li>
+        </ul>
+    </div>
+</div>
+<!--banner ends-->
+
+<script src="js/bootstrap.js"> </script>
+
+<div class="items">
+    <div class="container">
+        <h3>热门分类</h3>
+
+        <div class="items-sec">
+            <volist name="fl" id="fldata">
+
+                <div class="col-md-3 feature-grid">
+                    <a href="__URL__/assort/type/{$fldata.abbr}"><img src="__ROOT__/Public/picture/general/{$fldata.abbr}.jpg" alt=""/>
+                        <div class="arrival-info">
+
+                            <h3>{$fldata.chname}</h3>
+
+                            <span class="disc">[了解更多]</span>
+                        </div>
+                        <div class="viw">
+                            <a href="__URL__/assort/type/{$fldata.abbr}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                        </div>
+                    </a>
+                </div>
+
+            </volist>
+        </div>
+
+
+        <div class="items-sec btm-sec">
+            <volist name="flg" id="flgdata">
+
+                <div class="col-md-3 feature-grid">
+                    <a href="__URL__/assort/type/{$flgdata.abbr}"><img src="__ROOT__/Public/picture/general/{$flgdata.abbr}.jpg" alt=""/>
+                        <div class="arrival-info">
+
+                            <h3>{$flgdata.chname}</h3>
+
+                            <span class="disc">[了解更多]</span>
+                        </div>
+                        <div class="viw">
+                            <a href="__URL__/assort/type/{$flgdata.abbr}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                        </div>
+                    </a>
+                </div>
+
+            </volist>
+
+        </div>
+
+</div>
+    </div>
+<!--end of fl-->
+
+<div class="items">
+    <div class="container">
+        <h3>推荐培训课程</h3>
+        <div class="items-sec">
+
+
+            <volist name="tj" id="tjdata">
+
+                <div class="col-md-3 feature-grid">
+                    <a href="__APP__/Home/Detail/info/no/{$tjdata.cph}"><img src="__ROOT__/Public/picture/private/{$tjdata.cph}1.jpg" alt=""/>
+                        <div class="arrival-info">
+
+                            <h3>{$tjdata.cpm}</h3>
+
+                            <span class="disc">[了解更多]</span>
+                        </div>
+                        <div class="viw">
+                            <a href="__APP__/Home/Detail/info/no/{$tjdata.cph}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                        </div>
+                    </a>
+                </div>
+
+            </volist>
+
+        </div>
+    </div>
+</div>
+
+<include file="./Public/structure/footer.html" />
